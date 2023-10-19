@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+header nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+header .navbar-brand img {
+  width: 50px;
+}
+.navbar-button .btn-danger {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background-color: rgb(152, 0, 0);
+  margin-left: 1rem;
+}
+
+.navbar-button .btn-outline-danger {
+  padding: 0.499rem 2.4rem;
+  border-radius: 5px;
+  color: rgb(152, 0, 0);
+  border: 0.1rem solid rgb(152, 0, 0);
+}
+
+.navbar-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.jumbotron {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 1rem 14.5rem 1rem 4.5rem;
+  min-height: 450px;
+  border-radius: 10px;
+  background-color: rgb(152, 0, 0);
+  color: white;
+}
+
+.jumbotron-img {
+  width: 500px;
+  height: 300px;
+  background-color: rgb(14, 12, 12);
+  border-radius: 10px;
+  position: relative;
+  /* left: 132px;  */
+  right: -35%;
+}
+
+.jumbotron-text {
+  padding: 1rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-left: 3rem;
+}
+
+.jumbotron-text h1 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.jumbotron-text p {
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.jumbotron span {
+  font-weight: bold;
+}
+
+.jumbotron-text .title {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.jumbotron-text .title-footer {
+  margin-top: 1rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  margin: 1rem 1rem 1rem 4.5rem;
+  color: rgb(160, 0, 0);;
+}
+
+.menu .card {
+  border-radius: 10px;
+  width: 250px;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+.menu .card img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu .card-text {
+  background-color: pink;
+  padding: 1rem;
+  margin-top: -5px;
+}
+
+.menu .card-img {
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.menu-title {
+  display: flex;
+  margin: 1rem 1rem 1rem 4.5rem;
+  color: rgb(160, 0, 0);
+}
+
+@media screen and (max-width: 578px) {
+  .jumbotron {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 1rem 1rem;
+    min-height: 450px;
+    border-radius: 10px;
+    background-color: rgb(152, 0, 0);
+    color: white;
+  }
+
+  .jumbotron-img {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(14, 12, 12);
+    border-radius: 10px;
+    position: absolute;
+    top: 57%;
+    left: 9%;
+  }
+
+  .jumbotron-text {
+    padding: 1rem;
+  }
+
+  .jumbotron-text h1 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+
+  .jumbotron-text p {
+    font-weight: 100;
+    line-height: 1.5rem;
+  }
+
+  .jumbotron span {
+    font-weight: bold;
+  }
+
+  .jumbotron-text .title {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .jumbotron-text .title-footer {
+    margin-top: 1rem;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem 1rem;
+  }
+
+  .menu .card {
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+  }
+  .menu .card img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .menu .card-text {
+    padding: 1rem;
+    margin-top: -5px;
+  }
+
+  .menu .card-img {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .menu-title {
+    display: flex;
+    margin: 16rem 1rem 1rem 1rem;
+  }
+}
+
+@media (min-width: 578px) and (max-width: 992px) {
+  .jumbotron {
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 4.5rem;
+  }
+
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 6rem;
+  }
+
+  .menu-title {
+    margin: 16rem 4.5rem 1rem 4.5rem;
+  }
+
+  .menu .card-text {
+    background-color: pink;
+    padding: 1rem;
+    margin-top: -5px;
+  }
+  .jumbotron-img {
+    border-radius: 10px;
+    position: relative;
+    right: 74.99%;
+    top: 65%;
+  }
+
+  .jumbotron-text {
+    width: 377px;
+  }
+}
