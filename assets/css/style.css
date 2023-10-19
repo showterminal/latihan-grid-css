@@ -140,9 +140,8 @@ header .navbar-brand img {
     background-color: rgb(14, 12, 12);
     border-radius: 10px;
     position: absolute;
-/*     top: 57%; */
-    top: 81%;
-/*     left: 9%; */
+    top: 57%;
+    left: 9%;
   }
 
   .jumbotron-text {
