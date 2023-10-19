@@ -141,8 +141,8 @@ header .navbar-brand img {
     border-radius: 10px;
     position: absolute;
 /*     top: 57%; */
-    top: 81%
-    left: 9%;
+    top: 81%;
+/*     left: 9%; */
   }
 
   .jumbotron-text {
